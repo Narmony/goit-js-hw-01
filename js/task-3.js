@@ -13,7 +13,7 @@
 // const ADMIN_PASSWORD = 'jqueryismyjam';
 // let message;
 
-
+'use strict';
 const ADMIN_PASSWORD = 'jqueryismyjam';
 let message;
 

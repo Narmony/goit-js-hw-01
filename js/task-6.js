@@ -24,7 +24,7 @@ let total = 0;
 // alert(`'Общая сумма чисел равна ${total}`);
 
 
-
+'use strict';
 while (true) {
   input = prompt("Введите число");
   if (input === null) {
