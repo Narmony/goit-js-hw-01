@@ -12,6 +12,8 @@
 // let input;
 // let total = 0;
 
+
+
 'use strict';
 let input;
 let total = 0;
@@ -23,9 +25,7 @@ let total = 0;
 
 // alert(`'Общая сумма чисел равна ${total}`);
 
-
-
-while (true) {
+while (input!==null) {
   input = prompt("Введите число");
   if (input === null) {
     alert(`Общая сумма чисел равна ${total}`);

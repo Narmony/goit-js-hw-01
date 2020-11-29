@@ -21,7 +21,7 @@ const pricePerDroid = 3000;
 let message;
 let balance;
 let amount = prompt("Сколько дроидов хотите купить?");
-let totalPrice = pricePerDroid*Number(amount);
+let totalPrice = pricePerDroid*amount;
 if (amount === null) {
     message = 'Отменено пользователем!';
 }
@@ -30,7 +30,7 @@ else {
         message = 'Недостаточно средств на счету!';
 
     } else {
-        balance = credits - pricePerDroid * Number(amount);
+        balance = credits - pricePerDroid*amount;
         message = `Вы купили ${amount} дроидов, на счету осталось ${balance} кредитов.`;
          
     }

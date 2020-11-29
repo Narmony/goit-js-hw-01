@@ -24,33 +24,32 @@ if (country === null) {
 } else {
     country = country.toLowerCase();
     switch (country) {
-        case 'Китай'.toLowerCase():
+        case 'китай':
             deliveryPrice = 100;
-            message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
             break;
 
-        case 'Чили'.toLowerCase():
+        case 'чили':
             deliveryPrice = 250;
-            message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
             break;
     
-        case 'Австралия'.toLowerCase():
+        case 'австралия':
             deliveryPrice = 170;
-            message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
             break;
     
-        case 'Индия'.toLowerCase():
+        case 'индия':
             deliveryPrice = 80;
-            message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
             break;
     
-        case 'Ямайка'.toLowerCase():
+        case 'ямайка':
             deliveryPrice = 120;
-            message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
             break;
 
         default:
             message = 'В вашей стране доставка не доступна';
     }
 }
+if (!message) {
+    message = `Доставка в ${country} будет стоить ${deliveryPrice} кредитов`;
+}
+
 alert(message);
